@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './cvweb-cintutudev.component.html',
   styles: ``
 })
-export class CvwebCintutudevComponent {
+export default class CvwebCintutudevComponent {
 
 }
