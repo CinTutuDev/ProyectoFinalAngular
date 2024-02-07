@@ -12,3 +12,23 @@
   justify-content: center; // Esto centrará horizontalmente la imagen
   height: 20vh;
 }
+// Definir una variable para el color principal
+$color-rosa: #ff4081;
+
+// Definir una variable para el color secundario (violeta)
+$color-violeta: #8a2be2;
+
+.ico-a {
+  &:hover {
+    text-decoration: none;
+    text-transform: uppercase;
+
+    .ico {
+      color: $color-rosa;
+      transform: scale(1.5); // Escala al 110% al pasar el ratón
+      fill: url(#gradient); // Aplica el gradiente al pasar el ratón
+    }
+  }
+}
+
+// Gradiente lineal rosa a violeta
