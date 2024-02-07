@@ -1,27 +1,12 @@
-# ProyectoFinalAngular
+ # 🅰Curso con Angular17: Proyecto Final del curso  [De cero a experto](https://www.udemy.com/share/1041fw3@00KQrmTfzfCOraE-UPitF_2AGJPwDLBViFAXlna6rtbB7ZI6K-f6Rn0m3U1-Sj7dRQ==/)  
+ 
+ 
+ # 🤘Impartido por: Fernando Herrera
+ 
+ # <p align="center"> <img src="https://readme-typing-svg.demolab.com?font=Libre+Baskerville&size=45&duration=3100&pause=500&color=1e295a&center=true&vCenter=true&width=940&lines=Tweempus" align="middle" alt="Tweempus" width="100%"/>![100px](Tweempus/../src/assets/images/TwLoginDark.png) 
+ </p> 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.2.
+ # <p align="center"> Proyecto realizado con ![angular](https://user-images.githubusercontent.com/71487857/212993270-3cf1454e-f0d7-4164-bc01-20d5fe6469cd.png)Angular16</p> 
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Descripción del Proyecto:
+### <p align="center">"Proyecto Angular 17 con Alwin Spar: Una exhibición completa de mis habilidades desarrolladas durante el curso. Desde aplicaciones interactivas hasta interfaces dinámicas, este proyecto final destaca mis logros a lo largo de mi viaje en Angular. Cada demostración representa una realización única, encapsulando el conocimiento adquirido y la maestría alcanzada. Explora y disfruta de la diversidad de proyectos que he creado para demostrar mi experiencia en Angular </p>
