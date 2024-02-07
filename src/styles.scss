@@ -2,10 +2,13 @@
 /* @tailwind base;
 @tailwind components;
 @tailwind utilities; */
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 .img-perfil {
-  margin-left:6%;
+  display: flex;
+  align-items: center;
+  justify-content: center; // Esto centrará horizontalmente la imagen
+  height: 20vh;
 }

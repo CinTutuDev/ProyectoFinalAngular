@@ -25,6 +25,12 @@ export const routes: Routes = [
         loadComponent: () =>
           import('./dashboard/pages/proyectos/proyectos.component'),
       },
+      {
+        path: 'repositorios',
+        title: 'Repos Importantes',
+        loadComponent: () =>
+          import('./dashboard/pages/repositorios/repositorios.component'),
+      },
 
       {
         path: '',
