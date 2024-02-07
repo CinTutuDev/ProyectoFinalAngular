@@ -23,7 +23,7 @@ export const routes: Routes = [
         path: 'proyectos',
         title: 'Proyectos del curso',
         loadComponent: () =>
-          import('./dashboard/pages/repositorios/repositorios.component'),
+          import('./dashboard/pages/proyectos/proyectos.component'),
       },
 
       {
