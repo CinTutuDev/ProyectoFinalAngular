@@ -1,6 +1,8 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, computed, inject } from '@angular/core';
+import { ResursosService } from '@services/resursos.service';
 import { TitleComponent } from '@shared/title/title.component';
+
 
 @Component({
   standalone: true,
@@ -9,5 +11,12 @@ import { TitleComponent } from '@shared/title/title.component';
   styles: ``
 })
 export default class RecursosComponent {
+
+  public allRecursos = inject(ResursosService);
+/*   redirectToUrl(url: string): void {
+    window.location.href = url;
+    window.open(url, '_blank');
+  } */
+
 
 }

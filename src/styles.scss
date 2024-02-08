@@ -1,6 +1,9 @@
 /* @tailwind base;
 @tailwind components;
 @tailwind utilities; */
+/* @import "~@fortawesome/fontawesome-free/css/all.css"; */
+@import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
+
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
@@ -32,9 +35,10 @@ body{
   }
 }
 
-.cvw-banner {
+
+/* .cvw-banner {
   margin-top: -79%;
-}
+} */
 
 .antialiased {
 
@@ -43,15 +47,24 @@ body{
     .grid {
       grid-template-columns: 1fr; // Cambiar a una sola columna en dispositivos más pequeños
     }
-    .cvw-banner{
+ /*    .cvw-banner{
       margin-top: -180%;
-    }
-    #menu {
+    } */
+    #menu-dash {
       margin-left: 12%;
       col-span: 12; // Ocupar toda la anchura en dispositivos más pequeños
     }
-
-    #content {
+    .menu-recursos{
+      col-span: 12;
+      .bg-black\/60 {
+        margin-left: -15px;
+      }
+     /*  .box-recursos{
+        margin-left: -10%;
+        padding: -2%!important;
+      } */
+    }
+    #content-dash {
       col-span: 12; // Ocupar toda la anchura en dispositivos más pequeños
     }
   }
