@@ -11,4 +11,6 @@ import { Component, Input } from '@angular/core';
 })
 export class TitleComponent {
   @Input({ required: true }) title!: string;
+
+  public titleCurso: string= 'De cero a experto ';
 }

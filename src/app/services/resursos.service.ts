@@ -12,14 +12,65 @@ export class ResursosService {
       ico: 'fab fa-angular',
     },
     {
-      title: 'Recurso 1',
-      url: 'https://tailwindcomponents.com/component/dashboard-example',
-      ico: 'icono1.png',
+      title: 'MongoDB',
+      url: 'https://www.mongodb.com/try/download/community',
+      ico: 'fa-solid fa-feather-pointed',
     },
     {
-      title: 'Recurso 1',
-      url: 'https://github.com/CinTutuDev/Comandos-de-Angular',
-      ico: 'icono1.png',
+      title: 'Postman',
+      url: 'https://www.postman.com/downloads',
+      ico: 'fa-solid fa-signs-post',
+    },
+    {
+      title: 'Página oficial Angular',
+      url: 'https://angular.io/cli',
+      ico: 'fa-brands fa-angular',
+    },
+    {
+      title: 'Angular 17',
+      url: 'https://angular.dev',
+      ico: 'fa-brands fa-angular',
+    },
+    {
+      title: 'Angular Material',
+      url: 'https://material.angular.io',
+      ico: 'fa-brands fa-angular',
+    },
+    {
+      title: 'TypeScript',
+      url: 'https://www.typescriptlang.org',
+      ico: 'fas fa-code',
+    },
+    {
+      title: 'bootstrap',
+      url: 'https://getbootstrap.com',
+      ico: 'fab fa-bootstrap',
+    },
+    {
+      title: 'netlify',
+      url: 'https://www.netlify.com',
+      ico: 'fa-brands fa-battle-net',
+    },
+    {
+      title: 'quicktype',
+      url: 'https://quicktype.io/',
+      ico: 'fas fa-file-code',
+    },
+
+    {
+      title: 'API restcountries',
+      url: 'https://restcountries.com',
+      ico: 'fas fa-globe',
+    },
+    {
+      title: 'mapbox',
+      url: 'https://www.mapbox.com',
+      ico: 'fas fa-map-marked',
+    },
+    {
+      title: 'tailwind Components',
+      url: 'https://tailwindcomponents.com',
+      ico: 'fa-solid fa-wind',
     },
   ];
   constructor() {}

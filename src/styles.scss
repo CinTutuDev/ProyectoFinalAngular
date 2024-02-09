@@ -36,7 +36,14 @@ body {
   height: 20vh;
   margin-left: 6.5%;
 }
-
+.menu-recursos{
+  .recusos-llaveIn{
+    color: $color-ico-btn;
+  }
+}
+.udemy{
+  width: 50px;
+}
 .ico-a {
   &:hover {
     text-decoration: none;
@@ -134,6 +141,7 @@ body {
 }
 
 .title-loader {
+
   border: 0.1em solid $border-color;
   background-color: $background-color;
   color: $text-color;
@@ -193,6 +201,7 @@ body {
   }
 
   .text-loading {
+
     display: inline-block;
     white-space: nowrap;
     overflow: hidden;

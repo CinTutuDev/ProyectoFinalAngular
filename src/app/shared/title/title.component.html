@@ -1,23 +1,36 @@
-<!-- <div class="flex justify-center">
+<div class="flex justify-center">
   <div>
     <div
       role="alert"
-      class="relative w-full text-center text-base font-regular px-4 mb-12 py-4 rounded-lg bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 flex"
+      class="relative w-full text-center text-base font-regular px-4  py-4 rounded-lg flex"
     >
-      <div class="mr-12">
-        <p class="font-bold text-2xl text-center text-black">{{ title }}</p>
+      <div class="mr-1">
+        <a
+          href="https://www.udemy.com/course/angular-fernando-herrera/?kw=angular+de+cero&src=sac"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img class="udemy" src="assets\Udemy-Emblem.png" alt="Udemy Course" />
+        </a>
+      </div>
+      <div>
+        <p class="font-bold text-2xl text-center text-violet-500">
+          {{ titleCurso }}
+        </p>
       </div>
     </div>
   </div>
-</div> -->
+</div>
 <div class="title-loader flex justify-center">
-  <div class="terminal-header relative w-full text-center text-base font-regular px-4 mb-12 py-4  flex">
-    <div class="terminal-title ">Status</div>
-    <div class="terminal-controls ">
+  <div
+    class="terminal-header relative w-full text-center text-base font-regular px-4 mb-12 py-4 flex"
+  >
+    <div class="terminal-title">Page</div>
+    <div class="terminal-controls">
       <div class="control close"></div>
       <div class="control minimize"></div>
       <div class="control maximize"></div>
     </div>
   </div>
-  <div class="text-loading">{{ title }}...</div>
+  <div class="text-loading">{{ title }}</div>
 </div>

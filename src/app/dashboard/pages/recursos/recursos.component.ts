@@ -13,10 +13,7 @@ import { TitleComponent } from '@shared/title/title.component';
 export default class RecursosComponent {
 
   public allRecursos = inject(ResursosService);
-/*   redirectToUrl(url: string): void {
-    window.location.href = url;
-    window.open(url, '_blank');
-  } */
+
 
 
 }
