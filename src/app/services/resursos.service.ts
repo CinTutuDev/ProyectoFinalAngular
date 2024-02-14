@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
-import { Recursos } from '@interfaces/recursos';
+import { ModeloProyecto } from '@interfaces/modelo';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ResursosService {
-  public recursos: Recursos[] = [
+  public recursos: ModeloProyecto[] = [
     {
       title: 'My Súper índice',
       url: 'https://github.com/CinTutuDev/Comandos-de-Angular',
