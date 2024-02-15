@@ -36,12 +36,18 @@ body {
   height: 20vh;
   margin-left: 6.5%;
 }
-.menu-recursos{
-  .recusos-llaveIn{
+.menu-recursos {
+  .recusos-llaveIn {
     color: $color-ico-btn;
   }
 }
-.udemy{
+.menu-proyectos-bg {
+  .fa-music {
+    color: $color-ico-btn;
+  }
+}
+
+.udemy {
   width: 50px;
 }
 .ico-a {
@@ -121,7 +127,6 @@ body {
   }
 }
 
-
 @keyframes blinkCursor {
   50% {
     border-right-color: transparent;
@@ -129,19 +134,21 @@ body {
 }
 
 @keyframes typeAndDelete {
-  0%, 10% {
+  0%,
+  10% {
     width: 0;
   }
-  45%, 55% {
+  45%,
+  55% {
     width: 6.2em;
   } /* adjust width based on content */
-  90%, 100% {
+  90%,
+  100% {
     width: 0;
   }
 }
 
 .title-loader {
-
   border: 0.1em solid $border-color;
   background-color: $background-color;
   color: $text-color;
@@ -201,44 +208,58 @@ body {
   }
 
   .text-loading {
-
     display: inline-block;
     white-space: nowrap;
     overflow: hidden;
     border-right: 0.2em solid $cursor-color; /* Cursor */
-    animation: typeAndDelete 4s steps(11) infinite, blinkCursor 0.5s step-end infinite alternate;
+    animation: typeAndDelete 4s steps(11) infinite,
+      blinkCursor 0.5s step-end infinite alternate;
     margin-top: 1.5em;
   }
 }
-.antialiased {
-  @media only screen and (max-width: 768px) {
+
+.dashboard-container {
+  @media only screen and (max-width: 769px) {
+    justify-content: center;
+    .proyecto-w {
+      width: inherit;
+    }
     .grid {
       grid-template-columns: 1fr;
     }
 
-    #menu-dash  {
+    #menu-dash {
       margin-left: 12%;
-      col-span: 12;
+      grid-column: span 12;
     }
 
     .menu-recursos {
-      col-span: 12;
+      grid-column: span 12;
       .bg-black\/60 {
         margin-left: -15px;
       }
     }
+
     #content-dash {
-      col-span: 12;
+      grid-column: span 12;
     }
-    .title-loader{
-      col-span: 12;
+
+    .title-loader {
+      grid-column: span 12;
       width: 13em;
+    }
+
+    .menu-proyectos-bg {
+      grid-column: span 12;
+      .proyecto-grid {
+        justify-content: center;
+      }
     }
   }
 }
 
 /* CSS */
-.button-85 {
+/* .button-85 {
   padding: 0.1em 0.2em;
   border: none;
   outline: none;
@@ -303,4 +324,4 @@ body {
   left: 0;
   top: 0;
   border-radius: 10px;
-}
+} */

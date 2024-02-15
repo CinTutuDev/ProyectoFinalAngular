@@ -43,6 +43,42 @@ export class ProyectosService {
       img: 'assets/img/heroes.PNG'
 
     },
+    {
+      title: 'Reactive Forms 1',
+      url: '',
+      ico: 'fab fa-github',
+      logo: 'assets/logos/formReactivoLog.png',
+      githubUrl: 'https://github.com/CinTutuDev/FormApp',
+      img: 'assets/img/formularioReactivos.PNG'
+
+    },
+    {
+      title: 'Reactive Forms 2 (Dynamic Selectors)',
+      url: '',
+      ico: 'fab fa-github',
+      logo: 'assets/logos/formAppSelectorLog.png',
+      githubUrl: 'https://github.com/CinTutuDev/formAppSelectores',
+      img: 'assets/img/formSelector.PNG'
+
+    },
+    {
+      title: ' Lifecycle',
+      url: '',
+      ico: 'fab fa-github',
+      logo: 'assets/logos/lifeCycleLog.png',
+      githubUrl: 'https://github.com/CinTutuDev/LifeCycle',
+      img: 'assets/img/liveCicle.png'
+
+    },
+    {
+      title: 'Maps App',
+      url: 'https://maps-app-cintutudev.netlify.app',
+      ico: 'fab fa-github',
+      logo: 'assets/logos/mapsAppLog.png',
+      githubUrl: 'https://github.com/CinTutuDev/MapsApp',
+      img: 'assets/img/mapsApp.PNG'
+
+    },
 
   ];
 
