@@ -9,7 +9,9 @@
     Muestra de mis app hechas en el curso...
   </p>
 
-  <div class="proyecto-grid grid grid-cols-2 gap-3">
+  <div
+    class="proyecto-grid grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-4"
+  >
     @for (proyecto of allProyectos; track $index) {
     <div class="proyecto-w w-80 bg-black/60 to-white/5 p-3">
       <!-- foto -->
@@ -57,7 +59,6 @@
 
             <span class="text">Ir al proyecto</span>
           </a>
-
 
           }
         </li>

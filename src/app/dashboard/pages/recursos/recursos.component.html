@@ -8,14 +8,14 @@
 
     <div
       id="stats"
-      class="grid gird-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+      class="stats grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6"
     >
       @for (item of allRecursos.recursos; track $index) {
 
       <div
         class="box-recursos bg-black/60 to-white/5 p-5 rounded-lg cursor-pointer"
       >
-        <div class="flex flex-row space-x-4 items-center">
+        <div class="recursos-relleno flex flex-row space-x-4 items-center">
           <div class="">
             <i
               class="ico-recursos text-teal-300 {{ item.ico }}"
@@ -33,7 +33,7 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span class="text">Ir al enlace</span>
+              <span class="text-sm">Ir al enlace</span>
               <span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

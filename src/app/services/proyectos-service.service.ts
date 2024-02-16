@@ -2,19 +2,17 @@ import { Injectable } from '@angular/core';
 import { ModeloProyecto } from '@interfaces/modelo';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ProyectosService {
-
   public proyectos: ModeloProyecto[] = [
     {
       title: 'Dragon Ball Z',
       url: 'https://list-dragonball.netlify.app',
       ico: 'fab fa-github',
-      logo:'assets/logos/favicon.ico',
+      logo: 'assets/logos/favicon.ico',
       githubUrl: 'https://github.com/CinTutuDev/Dragon-Ball-Z',
-      img: 'assets/img/dragonBall.PNG'
-
+      img: 'assets/img/dragonBall.PNG',
     },
     {
       title: 'Tutu Gifs',
@@ -22,17 +20,15 @@ export class ProyectosService {
       ico: 'fab fa-github',
       logo: 'assets/logos/tutuGifsLog.png',
       githubUrl: 'https://github.com/CinTutuDev/GifsApp?tab=readme-ov-file',
-      img: 'assets/img/tutuGifs.PNG'
-
+      img: 'assets/img/tutuGifs.PNG',
     },
-     {
+    {
       title: 'Country App ',
       url: 'https://app-country-explore.netlify.app',
       ico: 'fab fa-github',
       logo: 'assets/logos/countryAppLog.png',
       githubUrl: 'https://github.com/CinTutuDev/CountryApp',
-      img: 'assets/img/countyApp.PNG'
-
+      img: 'assets/img/countyApp.PNG',
     },
     {
       title: 'Heroes App',
@@ -40,8 +36,7 @@ export class ProyectosService {
       ico: 'fab fa-github',
       logo: 'assets/logos/heroesAppLog.png',
       githubUrl: 'https://github.com/CinTutuDev/heroesApp',
-      img: 'assets/img/heroes.PNG'
-
+      img: 'assets/img/heroes.PNG',
     },
     {
       title: 'Reactive Forms 1',
@@ -49,8 +44,7 @@ export class ProyectosService {
       ico: 'fab fa-github',
       logo: 'assets/logos/formReactivoLog.png',
       githubUrl: 'https://github.com/CinTutuDev/FormApp',
-      img: 'assets/img/formularioReactivos.PNG'
-
+      img: 'assets/img/formularioReactivos.PNG',
     },
     {
       title: 'Reactive Forms 2 (Dynamic Selectors)',
@@ -58,8 +52,7 @@ export class ProyectosService {
       ico: 'fab fa-github',
       logo: 'assets/logos/formAppSelectorLog.png',
       githubUrl: 'https://github.com/CinTutuDev/formAppSelectores',
-      img: 'assets/img/formSelector.PNG'
-
+      img: 'assets/img/formSelector.PNG',
     },
     {
       title: ' Lifecycle',
@@ -67,8 +60,7 @@ export class ProyectosService {
       ico: 'fab fa-github',
       logo: 'assets/logos/lifeCycleLog.png',
       githubUrl: 'https://github.com/CinTutuDev/LifeCycle',
-      img: 'assets/img/liveCicle.png'
-
+      img: 'assets/img/liveCicle.png',
     },
     {
       title: 'Maps App',
@@ -76,25 +68,27 @@ export class ProyectosService {
       ico: 'fab fa-github',
       logo: 'assets/logos/mapsAppLog.png',
       githubUrl: 'https://github.com/CinTutuDev/MapsApp',
-      img: 'assets/img/mapsApp.PNG'
-
+      img: 'assets/img/mapsApp.PNG',
     },
-
+    {
+      title: 'Auth App',
+      url: 'https://authappcintutudev.netlify.app',
+      ico: 'fab fa-github',
+      logo: 'assets/logos/authAppLog.png',
+      githubUrl: 'https://github.com/CinTutuDev/authApp',
+      img: 'assets/img/AuthApp.png',
+    },
+    {
+      title: 'Angular17 & Tailwind',
+      url: '',
+      ico: 'fab fa-github',
+      logo: 'assets/logos/favicon17.ico',
+      githubUrl: 'https://github.com/CinTutuDev/angular17Dashboard',
+      img: 'assets/img/angular17.png',
+    },
   ];
 
-
-
   obtenerProyectos(): ModeloProyecto[] {
     return this.proyectos;
   }
-
-
-
-  /* agregarProyecto(proyecto: ModeloProyecto): void {
-    this.proyectos.push(proyecto);
-  }
-
-  obtenerProyectos(): ModeloProyecto[] {
-    return this.proyectos;
-  } */
 }

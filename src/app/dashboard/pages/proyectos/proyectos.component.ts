@@ -11,7 +11,6 @@ import { TitleComponent } from '@shared/title/title.component';
   styles: ``,
 })
 export default class ProyectosComponent {
-  /* public allProyectos: ModeloProyecto[]; */
   public allProyectos: ModeloProyecto[];
 
   constructor(private proyectosS: ProyectosService) {
