@@ -86,6 +86,14 @@ export class ProyectosService {
       githubUrl: 'https://github.com/CinTutuDev/angular17Dashboard',
       img: 'assets/img/angular17.png',
     },
+    {
+      title: 'My Super Map',
+      url: 'https://supermap.netlify.app/',
+      ico: 'fab fa-github',
+      logo: 'assets/logos/superMapLog.png',
+      githubUrl: 'https://github.com/CinTutuDev/MysuperMap',
+      img: 'assets/img/superMap.PNG',
+    },
   ];
 
   obtenerProyectos(): ModeloProyecto[] {
