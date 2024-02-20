@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { SidemenuComponent } from '@shared/sidemenu/sidemenu.component';
-
+import * as Aos from 'aos';
 
 
 @Component({
@@ -11,5 +11,7 @@ import { SidemenuComponent } from '@shared/sidemenu/sidemenu.component';
   styles: ``
 })
 export default class DashboardComponent  {
+
+
 
 }

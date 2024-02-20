@@ -1,9 +1,13 @@
 <h1
+data-aos="fade-down"
+
   class="font-bold text-lg lg:text-3xl text-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent"
 >
   CinTutuDev<span class="text-purple-500">.</span>
 </h1>
-<div class="sidemenu">
+<div class="sidemenu" data-aos="flip-left"
+data-aos-easing="ease-out-cubic"
+>
   <div class="flex flex-col mr-5 text-center mb-11 mt-2 lg:mr-15">
     <div class="inline-block mb-4 relative shrink-0 rounded-[.95rem]">
       <img
@@ -12,7 +16,7 @@
         alt="Myperfil"
       />
     </div>
-    <div class="text-center">
+    <div class="text-center" data-aos="flip-up" >
       <a
         href="javascript:void(0)"
         class="text-dark font-semibold hover:text-primary text-[1.25rem] transition-colors duration-200 ease-in-out"
@@ -22,7 +26,7 @@
 
       <!-- social icon -->
 
-      <div class="mt-2 mb-5 space-x-2 text-gray-500">
+      <div class="mt-2 mb-5 space-x-2 text-gray-500" >
         <!-- Twitter -->
         <a
           target="_blank"
@@ -128,7 +132,7 @@
         class="flex flex-col space-y-2 md:flex-row md:space-y-0 space-x-2 items-center"
       >
         <!--  Dashboard -->
-        <div>
+        <div >
           @for (item of menuItems; track $index) {
 
           <a
@@ -137,11 +141,11 @@
             href="#"
             class="w-full space-x-2 items-center text-base font-regular px-4 py-3 boder-b rounded-lg text-white flex"
           >
-            <div class="flex flex-col">
-              <span class="text-lg ftext-slate-300 font-bold leading-5">{{
+            <div class="flex flex-col" >
+              <span class="text-lg ftext-slate-300 font-bold leading-5" data-aos="fade-right">{{
                 item.title
               }}</span>
-              <span class="text-sm text-white/50 hidden md:block">{{
+              <span class="text-sm text-white/50 hidden md:block" data-aos="fade-left">{{
                 item.path
               }}</span>
             </div>
