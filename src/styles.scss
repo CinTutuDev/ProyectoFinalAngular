@@ -6,6 +6,7 @@
 
 $color-rosa: #ff4081;
 $color-violeta: #8a2be2;
+$color-violeta-light: #a548b6;
 $color-ico-btn: #4fd1c5;
 $bg-target: #2f2a2a99;
 
@@ -56,6 +57,48 @@ body {
       transform: scale(1.5);
       fill: url(#gradient);
     }
+  }
+}
+.icoBudu{
+  border-radius: 50%;
+  width: 50px;
+
+}
+.robotIco {
+  display: block;
+  margin: 0 auto;
+}
+.sidemenu{
+
+    .sidemenu-img{
+      max-width: 120%;
+
+      /* justify-content: center; */
+    }
+
+}
+.sidemenu-separator{
+  margin-top: -20px;
+}
+
+.footer{
+
+
+  .footer-text{
+    i{
+      color: $color-ico-btn;
+    }
+    color: whitesmoke;
+    a:hover {
+      text-decoration: none;
+      color:  $color-ico-btn;
+  }
+  i:hover{
+    color: $color-ico-btn;
+  }
+  }
+  .footer-free{
+    margin-top: -18px;
   }
 }
 
@@ -231,7 +274,7 @@ body {
     background: green;
   }
 }
-.dashboard-container {
+/* .dashboard-container {
   @media only screen and (max-width: 769px) {
     justify-content: center;
     .proyecto-w {
@@ -289,9 +332,90 @@ body {
       }
     }
   }
+} */
+.dashboard-container {
+  @media only screen and (max-width: 769px) {
+    .sidemenu{
+      .sidemenu-firma{
+        max-width: 50%;
+        margin-left: 28%;
+      }
+      .sidemenu-imgPerfil{
+        margin-left: 28%;
+        grid-column: span 12;
+
+      }
+    }
+    .md\:flex-row {
+      flex-direction: column-reverse;
+    }
+    .proyecto-w {
+      width: inherit;
+    }
+    .grid {
+      grid-template-columns: 1fr;
+    }
+
+    #menu-dash {
+      /* margin-left: 12%; */
+      grid-column: span 12;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+
+    .menu-recursos {
+      grid-column: span 12;
+      .bg-black\/60 {
+        margin-left: -15px;
+      }
+    }
+
+    #content-dash,
+    .title-loader,
+    .menu-proyectos-bg {
+      grid-column: span 12;
+    }
+
+    .title-loader {
+      width: 13em;
+    }
+
+    .menu-proyectos-bg .proyecto-grid {
+      justify-content: center;
+    }
+
+    .stats {
+      justify-content: center;
+      width: 45%;
+      margin-left: 25%;
+      .recursos-relleno {
+        justify-content: center;
+      }
+    }
+
+  }
+
 }
 
 @media only screen and (min-width: 320px) and (max-width: 430px) {
+
+#firma{
+  max-width: 200%;
+  margin-left: -43%;
+}
+
+.img-perfil{
+  margin-left: -18%;
+  grid-column: span 12;
+
+}
+  .menu-proyectos-bg {
+    background-color: black;
+  }
+  .content-dash {
+    background-color: black;
+  }
   .cvw-banner1 {
     font-size: 12px;
   }
@@ -301,7 +425,7 @@ body {
     font-size: 10px;
   }
   .cvw-banner2 {
-   /*  background-color: #e2e8f0; */
+    /*  background-color: #e2e8f0; */
     font-size: small;
   }
 
@@ -313,5 +437,10 @@ body {
     text-align: center;
     box-sizing: border-box;
     /*   margin-left: 18%; */
+  }
+
+  .icoBudu{
+    width: 15%;
+
   }
 }
