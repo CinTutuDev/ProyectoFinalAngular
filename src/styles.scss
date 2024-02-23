@@ -59,45 +59,38 @@ body {
     }
   }
 }
-.icoBudu{
+.icoBudu {
   border-radius: 50%;
   width: 50px;
-
 }
 .robotIco {
   display: block;
   margin: 0 auto;
 }
-.sidemenu{
-
-    .sidemenu-img{
-      max-width: 120%;
-
-      /* justify-content: center; */
-    }
-
+.sidemenu {
+  .sidemenu-img {
+    max-width: 110%;
+  }
 }
-.sidemenu-separator{
+.sidemenu-separator {
   margin-top: -20px;
 }
 
-.footer{
-
-
-  .footer-text{
-    i{
+.footer {
+  .footer-text {
+    i {
       color: $color-ico-btn;
     }
     color: whitesmoke;
     a:hover {
       text-decoration: none;
-      color:  $color-ico-btn;
+      color: $color-ico-btn;
+    }
+    i:hover {
+      color: $color-ico-btn;
+    }
   }
-  i:hover{
-    color: $color-ico-btn;
-  }
-  }
-  .footer-free{
+  .footer-free {
     margin-top: -18px;
   }
 }
@@ -335,15 +328,14 @@ body {
 } */
 .dashboard-container {
   @media only screen and (max-width: 769px) {
-    .sidemenu{
-      .sidemenu-firma{
+    .sidemenu {
+      .sidemenu-firma {
         max-width: 50%;
         margin-left: 28%;
       }
-      .sidemenu-imgPerfil{
+      .sidemenu-imgPerfil {
         margin-left: 28%;
         grid-column: span 12;
-
       }
     }
     .md\:flex-row {
@@ -393,23 +385,19 @@ body {
         justify-content: center;
       }
     }
-
   }
-
 }
 
 @media only screen and (min-width: 320px) and (max-width: 430px) {
+  #firma {
+    max-width: 200%;
+    margin-left: -43%;
+  }
 
-#firma{
-  max-width: 200%;
-  margin-left: -43%;
-}
-
-.img-perfil{
-  margin-left: -18%;
-  grid-column: span 12;
-
-}
+  .img-perfil {
+    margin-left: -18%;
+    grid-column: span 12;
+  }
   .menu-proyectos-bg {
     background-color: black;
   }
@@ -439,8 +427,7 @@ body {
     /*   margin-left: 18%; */
   }
 
-  .icoBudu{
-    width: 15%;
-
+  .icoBudu {
+    width: 13%;
   }
 }
