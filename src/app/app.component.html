@@ -1,3 +1,16 @@
 
+<div *ngIf="!load">
+ <!--  <div class="loading-map d-flex justify-content-center align-items-center">
+    <div class="text-center">
+      <h3>Espere porfavor</h3>
+      <span>Localizando...</span>
+      <img src="assets\gif\spiner.gif"/>
+    </div>
+  </div> -->
+  <loading></loading>
 
-<router-outlet />
+</div>
+<div *ngIf="load">
+  <router-outlet />
+</div>
+
