@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     setTimeout(() => {
       this.load = true;
-    }, 3000);
+    }, 4000);
 
     Aos.init({
       duration: 1000,
