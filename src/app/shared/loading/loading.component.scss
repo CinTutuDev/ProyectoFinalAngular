@@ -60,27 +60,6 @@ section {
   }
 }
 
-@media (min-width: 800px) {
-  .nav h1 {
-    font-size: 5vw;
-  }
-
-  .nav h2 {
-    font-size: 3vw;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .nav h1 {
-    font-size: 8vw;
-  }
-
-  .nav h2 {
-    font-size: 2vw;
-    letter-spacing: 0.2vw;
-  }
-}
-
 span {
   color: #faebd7;
   text-shadow: 0 0 0 #faebd7;

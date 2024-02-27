@@ -3,15 +3,14 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+/* Variables globales */
+$bg: black;
 $color-rosa: #ff4081;
 $color-violeta: #8a2be2;
 $color-violeta-light: #a548b6;
 $color-ico-btn: #4fd1c5;
 $bg-target: #2f2a2a99;
-
-/* Variables para title */
-
 $border-color: #333;
 $background-color: #1a1a1a;
 $text-color: #0f0;
@@ -21,9 +20,63 @@ $close-bg-color: #e33;
 $minimize-bg-color: #ee0;
 $maximize-bg-color: #0b0;
 $cursor-color: green;
+$bt-bgRecursos: #18181a;
+
+root {
+  --size: 120px;
+  --font-size: 4rem;
+}
+
+.magic-name {
+  position: relative;
+  display: flex;
+}
+.magic-name .magic {
+  position: relative;
+  cursor: pointer;
+  height: 4rem;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+
+  span {
+    font-size: 2.2rem;
+    letter-spacing: 0.12rem;
+    font-weight: 700;
+    -webkit-text-stroke: 2px var(--color);
+    color: transparent;
+    transition: 0.5s;
+  }
+
+  &:hover span {
+    opacity: 0;
+  }
+}
+
+.magic-name .magic {
+  &::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: var(--font-size);
+    height: 0;
+    font-weight: 700;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    text-align: center;
+    line-height: 4rem;
+    color: var(--color);
+  }
+  &:hover::before {
+    height: 100%;
+    filter: drop-shadow(0 0 2rem var(--color));
+  }
+}
 
 body {
-  background-color: black;
+  background-color: $bg;
 }
 
 .img-perfil {
@@ -63,6 +116,27 @@ body {
   border-radius: 50%;
   width: 50px;
 }
+.robot-float {
+  /*   border-radius: 50%; */
+  /* margin-left: 98px; */
+  width: 30px;
+  /* justify-content: center; */
+}
+
+.robot-loker {
+  animation: spin 5s ease;
+  &:hover {
+    transform: translateX(-50%) translateY(-100%);
+    opacity: 1;
+    transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotateY(5turn);
+  }
+}
 .robotIco {
   display: block;
   margin: 0 auto;
@@ -98,7 +172,7 @@ body {
 .btn-recursos {
   position: relative;
   overflow: hidden;
-  border: 1px solid #18181a;
+  border: 1px solid $bt-bgRecursos;
   border-radius: 5px;
   color: $color-rosa;
   font-size: 12px;
@@ -140,7 +214,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: $bg;
     transform-origin: bottom center;
     transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
     transform: skewY(9.3deg) scaleY(0);
@@ -267,142 +341,103 @@ body {
     background: green;
   }
 }
-/* .dashboard-container {
-  @media only screen and (max-width: 769px) {
-    justify-content: center;
-    .proyecto-w {
-      width: inherit;
-    }
-    .grid {
-      grid-template-columns: 1fr;
-    }
 
-    #menu-dash {
-      margin-left: 12%;
-      grid-column: span 12;
-    }
+/* ---------------------------------------Media Query ---------------------------------------- */
 
-    .menu-recursos {
-      grid-column: span 12;
-      .bg-black\/60 {
-        margin-left: -15px;
-      }
-    }
-
-    #content-dash {
-      grid-column: span 12;
-    }
-
-    .title-loader {
-      grid-column: span 12;
-      width: 13em;
-    }
-
-    .menu-proyectos-bg {
-      grid-column: span 12;
-      .proyecto-grid {
-        justify-content: center;
-      }
-    }
-  }
-}
-.dashboard-container {
-  @media only screen and (max-width: 769px) {
-    #menu-dash {
-      margin-left: 0;
-      grid-column: span 12;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-    }
-
-    .stats {
-      justify-content: center;
-      width: 45%;
-      margin-left: 25%;
-      .recursos-relleno {
-        justify-content: center;
-      }
-    }
-  }
-} */
-.dashboard-container {
-  @media only screen and (max-width: 769px) {
-    .sidemenu {
-      .sidemenu-firma {
-        max-width: 50%;
-        margin-left: 28%;
-      }
-      .sidemenu-imgPerfil {
-        margin-left: 28%;
-        grid-column: span 12;
-      }
-    }
-    .md\:flex-row {
-      flex-direction: column-reverse;
-    }
-    .proyecto-w {
-      width: inherit;
-    }
-    .grid {
-      grid-template-columns: 1fr;
-    }
-
-    #menu-dash {
-      /* margin-left: 12%; */
-      grid-column: span 12;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-    }
-
-    .menu-recursos {
-      grid-column: span 12;
-      .bg-black\/60 {
-        margin-left: -15px;
-      }
-    }
-
-    #content-dash,
-    .title-loader,
-    .menu-proyectos-bg {
-      grid-column: span 12;
-    }
-
-    .title-loader {
-      width: 13em;
-    }
-
-    .menu-proyectos-bg .proyecto-grid {
-      justify-content: center;
-    }
-
-    .stats {
-      justify-content: center;
-      width: 45%;
-      margin-left: 25%;
-      .recursos-relleno {
-        justify-content: center;
-      }
-    }
-  }
-}
-
-@media only screen and (min-width: 320px) and (max-width: 430px) {
-  #firma {
-    max-width: 200%;
-    margin-left: -43%;
+/* Media Query para tabletas */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .loading-name {
+    font-size: 38px !important;
   }
 
-  .img-perfil {
-    margin-left: -18%;
+  .loading-nav h2 {
+    font-size: 2vw;
+    letter-spacing: 0.2vw;
+  }
+  .sidemenu {
+    .sidemenu-firma {
+      max-width: 60%;
+    }
+    .sidemenu-imgPerfil {
+      margin-left: 28%;
+      grid-column: span 12;
+    }
+  }
+  .md\:flex-row {
+    flex-direction: column-reverse !important;
+  }
+  .proyecto-w {
+    width: inherit;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  #menu-dash {
+    /* margin-left: 12%; */
+    grid-column: span 12;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .menu-recursos {
+    grid-column: span 12;
+    .bg-black\/60 {
+      margin-left: -15px;
+    }
+  }
+
+  #content-dash,
+  .title-loader,
+  .menu-proyectos-bg {
     grid-column: span 12;
   }
-  .menu-proyectos-bg {
-    background-color: black;
+
+  .title-loader {
+    width: 13em;
   }
-  .content-dash {
-    background-color: black;
+
+  .menu-proyectos-bg .proyecto-grid {
+    justify-content: center;
+  }
+
+  .stats {
+    justify-content: center;
+
+    .recursos-relleno {
+      justify-content: center;
+    }
+  }
+}
+
+/* Media Query para dispositivos móviles en general */
+@media only screen and (max-width: 767px) {
+  .loading-nav {
+    .loading-name {
+      font-size: 5.9vw !important;
+    }
+    .m {
+      font-size: 3.5vw;
+    }
+  }
+  .ctd {
+    position: absolute;
+    top: 5%;
+    left: 80%;
+    .magic-name .magic {
+      span {
+        letter-spacing: 0.12rem;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .robot-float {
+    display: none;
+  }
+  .icoBudu {
+    width: 13%;
   }
   .cvw-banner1 {
     font-size: 12px;
@@ -413,7 +448,7 @@ body {
     font-size: 10px;
   }
   .cvw-banner2 {
-    /*  background-color: #e2e8f0; */
+    background-color: #e2e8f0;
     font-size: small;
   }
 
@@ -424,10 +459,90 @@ body {
   .cvw-banner2 .p-6 {
     text-align: center;
     box-sizing: border-box;
-    /*   margin-left: 18%; */
   }
 
-  .icoBudu {
-    width: 13%;
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  .picture-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .picture-container .img-defecto {
+    width: 500px;
+  }
+
+  .loading-firma {
+    top: 3% !important;
+    left: 35% !important;
+  }
+
+  .sidemenu .sidemenu-img {
+    max-width: 250px;
+    margin-left: 35px;
+  }
+  .img-perfil {
+    margin-left: 20%;
+  }
+
+  .md\:flex-row {
+    flex-direction: column-reverse !important;
+  }
+  .proyecto-w {
+    width: inherit;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  #menu-dash {
+    /* margin-left: 12%; */
+    grid-column: span 12;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .menu-recursos {
+    grid-column: span 12;
+    .bg-black\/60 {
+      margin-left: -15px;
+    }
+  }
+
+  #content-dash,
+  .title-loader,
+  .menu-proyectos-bg {
+    grid-column: span 12;
+    background-color: black;
+  }
+
+  .title-loader {
+    width: 13em;
+  }
+
+  .menu-proyectos-bg .proyecto-grid {
+    justify-content: center;
+  }
+
+  .stats {
+    justify-content: center;
+    width: 45%;
+    margin-left: 25%;
+    .recursos-relleno {
+      justify-content: center;
+    }
   }
 }

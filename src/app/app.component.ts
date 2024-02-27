@@ -11,12 +11,12 @@ import * as Aos from 'aos';
   styleUrl: './app.component.scss',
 })
 export class AppComponent implements OnInit {
-  title = 'ProyectoFinalAngular';
+  title = 'CtD';
   public load: Boolean = false;
   ngOnInit(): void {
     setTimeout(() => {
       this.load = true;
-    }, 4000);
+    }, 3000);
 
     Aos.init({
       duration: 1000,
