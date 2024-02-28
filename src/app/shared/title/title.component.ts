@@ -7,7 +7,6 @@ import { Component, Input } from '@angular/core';
   imports: [CommonModule],
   templateUrl: './title.component.html',
   template: ``,
-  styleUrl: './title.component.scss',
 })
 export class TitleComponent {
   @Input({ required: true }) title!: string;

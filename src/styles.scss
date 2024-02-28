@@ -125,11 +125,11 @@ body {
 
 .robot-loker {
   animation: spin 5s ease;
-  &:hover {
+  /* &:hover {
     transform: translateX(-50%) translateY(-100%);
     opacity: 1;
     transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
-  }
+  } */
 }
 
 @keyframes spin {
@@ -437,7 +437,7 @@ body {
     display: none;
   }
   .icoBudu {
-    width: 13%;
+    width: 40px;
   }
   .cvw-banner1 {
     font-size: 12px;
