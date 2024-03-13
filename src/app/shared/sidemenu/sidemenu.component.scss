@@ -17,18 +17,18 @@
   pointer-events: none;
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
   background: var(--background);
-  color: #ff0266;
+  color: #5a132f;
   border-radius: 0.3em;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   text-align: center;
   font-size: 14px;
-  width: 50%; /* Adjusted the width */
-  padding: 0.2em 0.5em; /* Adjusted padding */
-  white-space: nowrap; /* Prevent text wrapping */
+  width: 50%;
+  padding: 0.2em 0.5em;
+  white-space: nowrap;
 }
 
 .tooltip-container:hover .tooltip {
-  top: -25%; /* Adjusted the tooltip position */
+  top: -25%;
   opacity: 1;
   pointer-events: auto;
   transform: translateX(-50%) translateY(0);
